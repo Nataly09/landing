@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>KiotoRich</title>
-    <link rel="stylesheet" href="style.css">
-   <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">--> 
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+
 </head>
 
 <body>
 
     <header>
         <div class="container">
-            <div class="header-logo">
+            <div class="header-logo float-l">
                 <a href="#"><img src="img/logo.png"></a>
             </div>
-            <nav>
+            <nav class="header-menu float-l">
                 <ul>
                     <li><a href="#">Головна</a></li>
                     <li><a href="#">Меню</a></li>
@@ -27,136 +27,143 @@
                     <li><a href="#">Новини</a></li>
                 </ul>
             </nav>
-            <div class="netsocial">
-                <a href="#" class="header-vk"><img src="img/vk.png"></a>
-                <a href="#" class="header-f"><img src="img/facebook.png"></a>
-                <a href="#" class="header-inst"><img src="img/inst.png"></a>
+            <div class="netsocial-header float-l">
+                <a href="#" class="header-vk soc-b"><img src="img/vk.png"></a>
+                <a href="#" class="header-f soc-b"><img src="img/facebook.png"></a>
+                <a href="#" class="header-inst soc-b"><img src="img/inst.png"></a>
                 <a href="#" class="header-map"><img src="img/map.png"></a>
             </div>
-            <div class="header-contact">
-                <a href="tel:+380970000000"><b>(097)000-00-00</b></a><br>
-                <div>Працюємо з 11:00 до 23:00</div>
+            <div class="header-contact float-l">
+                <a href="tel:+380970000000">(097)000-00-00</a><br>
+                <div class="time-header">Працюємо з 11:00 до 23:00</div>
             </div>
         </div>
     </header>
-
-
+ <div class="slider"><img src="img/fon.jpg">
+     <div class="container">
+            <div class="circle">
+                <div class="h-top">їжа їжа їжа</div> 
+                <div class="b-top">друга страва в подарунок</div>
+         </div>
+            <div class="layer1"><img src="img/slider/layer1.png"></div>  
+            <div class="layer2"><img src="img/slider/Layer2.png"></div> 
+            <div class="layer3"><img src="img/slider/Layer3.png"></div> 
+            <div class="layer4"><img src="img/slider/layer4.png"></div>
+            <div class="layer5"><img src="img/slider/layer5.png"></div>
+        </div>
+        </div>
     <main>
-
         <div class="container">
-            <div class="banner">
-               <div class="h-top">їжа їжа їжа</div> 
-                <div class="h-bottom">друга страва<br>в подарунок</div> 
-            </div>
-        
-         <div class="fond">
+         <section class="content">
             <div class="headline">
-                <h2>Онлайн замовлення</h2>
-                <h3>Просто бери з собою 2 страви, коли забираєш сам!<br>Дуже крута акція.</h3>
+                <div>Онлайн замовлення</div>
+                <h3>Просто бери з собою 2 страви, коли забираєш сам! Дуже крута акція.</h3>
             </div>
-            <div class="case-menu">
-                <section class="sets">
-                    <img src="img/setstr.png">
-                    <p>Сети</p>
+            <section class="case-menu">
+                <article>
+                   <div class="sets-img"><a href="#"><img src="img/setstr.png"></a></div> 
+                    <div>Сети</div>
                     <a href="#" class="button-menu">Переглянути <img src="img/arrow.png"></a>
-                </section>
-                <section class="roll">
-                    <img src="img/rolltr.png">
-                    <p>Роли</p>
+                </article>
+                <article>
+                    <div class="roll-img"><a href="#"><img src="img/rolltr.png"></a></div>
+                    <div>Роли</div>
                     <a href="#" class="button-menu">Переглянути<img src="img/arrow.png"></a>
-                </section>
-                <section class="soups">
-                    <img src="img/soupstr.png">
-                    <p>Супи</p>
+                </article>
+                <article>
+                    <div class="soups-img"><a href="#"><img src="img/soupstr.png"></a></div>
+                    <div>Супи</div>
                     <a href="#" class="button-menu">Переглянути <img src="img/arrow.png"></a>
-                </section>
-                <section class="udon1">
-                    <img src="img/udontr.png">
-                    <p>Удони</p>
+                </article>
+                <article>
+                    <div class="udon1-img"><a href="#"><img src="img/udontr.png"></a></div>
+                    <div>Удони</div>
                     <a href="#" class="button-menu">Переглянути <img src="img/arrow.png"></a>
-                </section>
-                <section class="udon2">
-                    <img src="img/udon2tr.png">
-                    <p>Удони</p>
+                </article>
+                <article>
+                    <div class="udon2-img"><a href="#"><img src="img/udon2tr.png"></a></div>
+                    <div>Удони</div>
                     <a href="#" class="button-menu">Переглянути <img src="img/arrow.png"></a>
-                </section>
-                <section class="salads">
-                    <img src="img/saladstr.png">
-                    <p>Салати</p>
+                </article>
+                <article>
+                    <div class="salads-img"><a href="#"><img src="img/saladstr.png"></a></div>
+                    <div>Салати</div>
                     <a href="#" class="button-menu">Переглянути <img src="img/arrow.png"></a>
-                </section>
-                <section class="hotd">
-                    <img src="img/hotdtr.png">
-                    <p>Гарячі страви</p>
+                </article>
+                <article>
+                    <div class="hot-img"><a href="#"><img src="img/hotdtr.png"></a></div>
+                    <div>Гарячі страви</div>
                     <a href="#" class="button-menu">Переглянути <img src="img/arrow.png"></a>
-                </section>
-                <section class="otherd">
-                    <img src="img/otherdtr.png">
-                    <p>Інші страви</p>
+                </article>
+                <article>
+                    <div class="otherd-img"><a href="#"><img src="img/otherdtr.png"></a></div>
+                    <div>Інші страви</div>
                     <a href="#" class="button-menu">Переглянути <img src="img/arrow.png"></a>
-                </section>
-                <section class="dessert">
-                    <img src="img/desserttr.png">
-                    <p>Десерти</p>
+                </article>
+                <article>
+                    <div class="dessert-img"><a href="#"><img src="img/desserttr.png"></a></div>
+                    <div>Десерти</div>
                     <a href="#" class="button-menu">Переглянути <img src="img/arrow.png"></a>
-                </section>
-                <section class="udon3">
-                    <img src="img/udon3tr.png">
-                    <p>Удони</p>
+                </article>
+                <article>
+                    <div class="udon3-img"><a href="#"><img src="img/udon3tr.png"></a></div>
+                    <div>Удони</div>
                     <a href="#" class="button-menu">Переглянути <img src="img/arrow.png"></a>
+                </article>
+            </section>
 
-                </section>
-            </div>
-            <div class="news">
-                <div class="new1">
-                    <!-- calendar <i class="far fa-calendar-alt"></i> -->
+            <section class="news-content">
+                <div class="news-title">Новини</div>
+            <section class="news">
+                <article class="new1 "> 
                     <div class="new1-img"><a href="#"><img src="img/new1.jpg"></a></div>
-                    <div class="date-new1"> 12.12.2018</div>
-                    <div class="headline-new1">Наша спецпропозиція: Villa Krim в подарунок</div>
+                    <div class="headline-new1"><a href="#">Наша спецпропозиція: Villa Krim в подарунок</a></div>
                     <div class="indent-new1">Суші-бар «Kioto Rich» - успішний проект 2009 року, зустрічає гостей
                         стравами японської, європейської, авторської кухнями. Невимушена, легка атмосфера, позитивна
                         енергетика, підтримується оригінальним дизайном «industrial», панорамними вікнами, які
                         відкривають динамічний пейзаж центру міста, традиційними японськими ритмами і lounge музикою.
                     </div>
-                    <div class="button-new1 button-red"><a href="#">Детальніше</a></div>
-                </div>
-                <div class="new2">
-                    <div class="new2-img"><a href="#"><img src="img/new2.jpg"></a></div>
-                    <div class="date-new2"> 12.12.2018</div>
-                    <div class="headline-new2">Нове меню.<br>Вже скоро!</div>
-                    <div class="indent-new2">Свята, що наближаються надихають нас на нові прагнення і відкриття.
+                     <div class="date-new1"><img src="img/date.png">12.12.2018</div>
+                    <div class="button-new button-red"><a href="#">Детальніше</a></div>
+                </article>
+                <article class="new2 ">
+                    <div class="new2-img float-l"><a href="#"><img src="img/new2.jpg"></a></div>
+                    <div class="headline-new2 float-l"><a href="#">Нове меню.<br>Вже скоро!</a></div>
+                    <div class="indent-new2 float-l">Свята, що наближаються надихають нас на нові прагнення і відкриття.
                         І вже зовсім скоро ми презентуємо для наших гостей нове меню ресторану «KiotoRich».
                     </div>
-                    <div class="button-new2 button-red"><a href="#">Детальніше</a></div>
-                </div>
-                <div class="new3">
-                    <div class="new3-img"><a href="#"><img src="img/new3.jpg"></a></div>
-                    <div class="date-new3"> 12.12.2018</div>
-                    <div class="headline-new3">Уявляєте, ми разом вже 8 років.</div>
-                    За 8 років роботи нашого ресторану ви багаторазово показали нам своє добре ставлення. Ми вдячні вам
-                    за вашу довіру!
-                </div>
-                <div class="button-new3 button-red"><a href="#">Детальніше</a></div>
-            </div>
-        </div>
-        </div>
+                    <div class="date-new2 float-l"><img src="img/date.png">12.12.2018</div>
+                    <div class="button-new button-red float-l"><a href="#">Детальніше</a></div>
+                </article>
+                <article class="new3">
+                    <div class="new3-img float-l"><a href="#"><img src="img/new3.jpg"></a></div>
+                    <div class="headline-new3 float-l"><a href="#"> Уявляєте, ми разом<br> вже 8 років.</a> </div>
+                    <div class="indent-new3 float-l">За 8 років роботи нашого ресторану ви багаторазово показали нам своє добре ставлення. Ми вдячні вам
+                    за вашу довіру!</div>
+                    <div class="date-new3 float-l"><img src="img/date.png"> 12.12.2018</div>
+                     <div class="button-new button-red float-l"><a href="#">Детальніше</a></div>
+                </article>
+               </section>
+            </section>
+        </section>
+    </div>
     </main>
 
     <footer>
         <div class="container">
-        <div class="logo-footer"><a href="#"><img src="img/logofooter.png"></a></div>
-        <div class="contact">
+        <div class="logo-footer float-l"><a href="#"><img src="img/logofooter.png"></a></div>
+        <div class="contact float-l">
             <address class="address-footer">м.Полтава, вул.Європейська 8</address>
             <div class="time-footer">Працюэмо з 11:00 до 23:00</div>
             <div class="netsocial-footer">
-                <a href="#" class="footer-vk"><img src="img/vkfooter.png"></a>
-                <a href="#" class="footer-f"><img src="img/facebookfooter.png"></a>
-                <a href="#" class="footer-inst"><img src="img/instfooter.png"></a>
-                <a href="#" class="footer-map"><img src="img/mapfooter.png"></a>
+                    <a href="#" class="soc-b"><img src="img/vk.png"></a>
+                    <a href="#" class="soc-b"><img src="img/facebook.png"></a>
+                    <a href="#" class="soc-b"><img src="img/inst.png"></a>
+                    <a href="#" class="header-map"><img src="img/map.png"></a>
             </div>
         </div>
-        <div class="footer-contact-tel">
-            <a href="tel:+380977558383" class="tel1-footer">(097)755-83-83</a>
+        <div class="footer-contact-tel float-r">
+            <a href="tel:+380977558383" class="tel1-footer">(097)755-83-83</a><br>
             <a href="tel:+380667735808" class="tel1-footer">(066)773-58-08</a>
         </div>
     </div>

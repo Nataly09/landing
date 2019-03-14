@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&subset=cyrillic,cyrillic-ext');
+
+html {
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+/*    header    */
+
+header {
+    background-color: #0f0f0f;
+}
+
+.container:after {
+    content: " ";
+    clear: both;
+    display: block;}
+
+
+.header-logo {
+    width: 205px;
+    height: 60px;
+    padding: 15px 0;
+}
+
+
+.header-menu {
+    margin-left: 80px;
+}
+
+.header-menu ul li {
+    float: left;
+    height:90px;
+    line-height: 90px;
+    min-width: 94px;
+    padding: 0 15px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.netsocial-header {
+    margin-top: 31px;
+}
+
+.soc-b {
+    padding: 0 16px; 
+    border-right: 1px solid #3a3a3a;
+}
+
+.header-map {
+    padding: 0 16px;
+}
+
+.header-contact {
+    width: 190px;
+    margin-top: 20px;
+}
+
+.header-contact a {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.time-header{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/*    slider   */
+
+.slider {
+    position: relative;
+    z-index: 0;
+   overflow: hidden;
+}
+
+.circle {
+background:#f32121;
+width:430px;
+height:430px;
+border-radius:50%;
+position:absolute;
+left: 700px;
+top:95px;
+text-align:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+box-shadow: -2px 3px 30px 0px rgba(243, 33, 33, 0.64);
+z-index: 1;
+}
+
+.h-top {
+font-size:36px;
+font-weight:200;
+text-transform:uppercase;
+}
+
+.b-top {
+font-size:46px;
+text-transform:uppercase;
+font-weight:900;
+margin-top:32px;
+margin-bottom:30px
+}
+
+.layer1 {
+    display:inline-block;
+    position:absolute;
+    bottom: 0px;
+    right: 180px;
+    z-index:5;
+
+}
+
+.layer2 {
+    display:inline-block;
+    position: absolute; 
+    right: -50px;
+    top: 38px;
+}
+.layer3 {
+    display:inline-block;
+    position: absolute;
+    top: 60px;
+    left: 890px;
+    z-index: 5;
+}
+
+.layer4 {
+    display:inline-block;
+    position: absolute;
+    top: 90px;
+    left: 530px;
+    z-index: 5;
+
+}
+
+.layer5 {
+    display:inline-block;
+    position: absolute;
+    left: -250px;
+    bottom: 0px;
+}
+/*   footer    */
+
+footer {
+    background-color: #282828;
+}
+
+
+.logo-footer {
+    margin-top: 50px;
+    width: 205px;
+}
+
+.contact {
+    margin-top: 50px;
+    padding-left: 270px;
+    padding-bottom: 60px;
+}
+
+.address-footer, .time-footer {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.time-footer {
+    padding-top: 10px;
+}
+
+.netsocial-footer {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-contact-tel {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+/*   main   */
+
+main {
+    background-color: #0f0f0f;
+}
+
+/*  news-content  */
+
+.news-content {
+    margin-top: 115px;
+}
+
+.news-title {
+    font-size: 42px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.news {
+    margin-top: 170px;
+    height: 485px;
+    padding-bottom: 255px;
+    
+}
+
+.new1 {
+    max-width:572px;
+    height: 485px;
+    display:inline-block;
+    float:left;
+    position:relative;
+}
+
+.new2, .new3 {
+    width: 570px;
+    height: 230px;
+    position:relative;
+    display:inline-block;
+    vertical-align:top;
+    margin-left:28px;
+}
+
+
+.indent-new1, .indent-new2, .indent-new3 {
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+.indent-new2, .indent-new3 {
+    margin-left:30px;
+    text-align:justify;
+    max-width: 270px;
+}
+
+.headline-new1, .headline-new2, .headline-new3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.headline-new2, .headline-new3 {
+    margin-left:30px;
+    text-align:justify;
+}
+
+.date-new2, .date-new3{
+    margin-left:30px;
+    text-align:justify;
+    padding-top: 15px;
+}
+.date-new1 {
+    padding-top: 15px;
+}
+
+.new3 {
+    padding-top: 30px;
+}
+
+.button-red {
+ font-size:15px;
+text-transform:capitalize;
+background:#f32121;
+border-radius:50px;
+border:none;
+font-weight:400;
+width:150px;
+display:block;
+box-shadow:0 0 20px #F32121;
+text-align: center;
+padding:15px 35px;
+position: absolute;
+bottom: 0px;
+}
+.new2 .button-red, .new3 .button-red {
+   left: 300px; 
+}
