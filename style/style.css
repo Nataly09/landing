@@ -43,7 +43,9 @@ header {
     padding: 15px 0;
 }
 
-
+.header-menu {
+    margin-right: 40px;
+}
 .header-menu ul li {
     float: left;
     margin-top: 35px;
@@ -59,7 +61,6 @@ header {
 
 .netsocial-header {
     margin-top: 34px;
-    margin-left: 24px;
 }
 
 
@@ -74,15 +75,26 @@ header {
 
 
 .netsocial-header a:not(:first-child){
-        padding-left: 16px;
         border-left: 1px #3a3a3a solid;
         box-sizing: border-box;
 }
 
+.netsocial-header a:first-child {
+    padding-left: 0px;
+}
+.netsocial-header a:last-child {
+    padding-right: 0px;
+}
+.netsocial-header::after {
+    content: " ";
+    clear: both;
+    display: block;
+  }
+
 .header-contact {
-    width: 190px;
+    width: 180px;
     margin-top: 20px;
-    margin-left:9px;
+    margin-left:25px;
 }
 
 
@@ -136,7 +148,7 @@ justify-content: center;
 
 .h-top {
 font-size:36px;
-font-weight:200;
+font-weight:300;
 text-transform:uppercase;
 }
 
@@ -262,21 +274,20 @@ main {
     text-align: center;
     padding:20px 19px;
     position: relative;
-    bottom: -30px;
+    bottom: -25px;
     margin: 0 auto;
 }
 
 .img-menu {
     padding-top: 90px;
-    height: 150px;
-    padding-bottom: 32px;
+    height: 180px;
     text-align: center;
 }
 
 .title_menu {
     text-align: center;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     padding-top: 15px;
 }
 
@@ -322,12 +333,12 @@ main {
 }
 
 .new-img  {
-    width: 268px;
+    max-width: 268px;
     margin-right: 30px;
 }
 
 .news article:first-child .new-img{
-    width: 570px;
+    max-width: 570px;
 }
 
 .news article:first-child .headline-new{
@@ -420,6 +431,12 @@ footer {
     float: left;
     padding-right: 16px;
 }
+
+.netsocial-footer::after {
+    content: " ";
+    clear: both;
+    display: block;
+  }
 
 .netsocial-footer a:not(:first-child){
         padding-left: 16px;
@@ -515,17 +532,12 @@ footer {
         padding-bottom: 55px;
     }
     .news article:first-child .headline-new {
-        margin-top: 30px;
+        margin-top: 10px;
     }
     .news article:first-child .new-img {
         margin-right: 30px;
     }
-    
-    .news article:first-child .headline-new{
-        margin-top: 0;
-    }
-    }
-    @media (max-width: 1065px) {
+
     .header-logo {
         width: 200px;
         padding-left: 20px;
@@ -533,9 +545,11 @@ footer {
     .header-logo a img {
         width: 180px;
     }
+    .header-menu {
+        margin-right: 20px;}
+
     .header-menu ul li {
         padding-left: 18px;
-        font-size: 13px;
     }
     .netsocial-header {
         margin-left: 12px;
@@ -543,20 +557,15 @@ footer {
     
     .netsocial-header a {
         padding: 0 10px;
-
-    }
     }
     .header-contact {
         width: 170px;
-
     }
-    
     
     .header-contact a {
         font-size: 21px;
         font-weight: 600;
     }
-    
     .time-header{
         font-size: 11px;
     }
@@ -570,7 +579,6 @@ footer {
     footer .contact {
         padding-left: 150px;
 }
-
 }
 
 @media (max-width: 920px) {
@@ -580,8 +588,15 @@ footer {
     .header-logo a img {
         width: 140px;
     }
-    .header-menu ul li {
-        font-size: 13px;
+    .header-contact  {
+        float: none;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .header-menu {
+        padding-bottom: 15px;
     }
     footer .contact {
         padding-left: 120px;
@@ -589,22 +604,22 @@ footer {
     .netsocial-header a:not(:first-child) {
         padding-left: 10px;
     }
+main {
+    background: url('../img/fon/tlbackm.png') no-repeat left top, url('../img/fon/tbbackm.png') no-repeat right top, url('../img/fon/blbackm.png') no-repeat left bottom, url('../img/fon/brbackm.png') no-repeat right bottom, #0f0f0f;
+    
 }
+}
+
 @media (max-width: 860px) {
-    .netsocial-header a img {
-        max-width: 15px;
-        max-height: 15px;
-        margin: 0 auto;
-    }
-    .menu__item {
+ .menu__item {
         width: 33%;
     }
    
-    .case-menu .menu__item:nth-child(3n+3){
+.case-menu .menu__item:nth-child(3n+3){
         border-right: 1px #333 solid;
     }
     
-    .case-menu .menu__item:nth-child(4n+4) {
+.case-menu .menu__item:nth-child(4n+4) {
         border-right: 0;
 }
 
@@ -614,55 +629,172 @@ footer {
 .case-menu .menu__item:nth-child(5) {
     border-right: 0;
 }
-
-.header-logo a img {
-    width: 110px;
-}
-.header-logo {
-    width: 120px;
-}
-.header-menu ul li {
-    margin-top: 25px;
-    padding-left: 14px;
-}
-.netsocial-header a {
-    height: 15px;
-}
-.netsocial-header {
-    margin-top: 23px;
-}
-.header-contact {
-    width: 150px;
-}
-.header-contact a {
-    font-size: 18px;}
-    .time-header {
-        font-size: 9px;
-    text-align: left;
-}
 .logo-footer img {
-   width: 160px;
+    width: 160px;
+ }
+ footer .contact {
+     padding-left: 50px;
+ }
+ .address-footer, .time-footer {
+     font-size: 13px;
+ }
+ .netsocial-footer a img {
+     max-width: 15px;
+     max-height: 15px;
+     margin: 0 auto;
+ }
+ .netsocial-footer {
+     padding-top: 15px;
+     padding-left: 28px;
+ }
+ .footer-contact-tel {
+     font-size: 17px;
+ }
 }
-footer .contact {
-    padding-left: 50px;
+@media (max-width: 745px) {
+    .header-cont {
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .header-logo {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .header-menu {
+        float: none;
+        margin: 0 auto;
+    }
+    .header-menu ul li{
+        float: none;
+        margin-top: 15px;
+        border-bottom: 1px solid #323232;
+        padding-bottom: 10px;
+    }
+     
+    .header-menu ul:first-child {
+        border-top: 1px solid #323232;
+    }
+    .netsocial-header {
+        float: none;
+        margin: 0 auto;
+        padding-left: 30px;
+        max-width: 162px;
+    }
+
 }
-.address-footer, .time-footer {
-    font-size: 13px;
+
+@media (max-width: 670px) {
+    .menu__item {
+        width: 50%;
+    }
+   
+    .case-menu .menu__item:nth-child(2n+2){
+        border-right: 1px #333 solid;
+    }
+    
+    .case-menu .menu__item:nth-child(3) {
+        border-right: 0;
 }
-.netsocial-footer a img {
-    max-width: 15px;
-    max-height: 15px;
-    margin: 0 auto;
+.case-menu .menu__item:nth-child(9) {
+    border-right: 0;
 }
-.netsocial-footer {
+
+.case-menu .menu__item:nth-child(n+3) {
+    border-top: 0;
+}
+
+.new:first-child {
+    width: 90%;
+} 
+.new:not(:first-child){
+    width: 90%;
+}
+.new {
     padding-top: 15px;
-    padding-left: 28px;
+}
+.news article:first-child .new-img{
+    max-width: 270px;
+    float: left;
+    height: 260px;
+}
+.news article:first-child .new-img a img {
+    max-width: 100%;
+}
+.date-new {
+    padding-top: 0px;
+}
+.logo-footer  {
+    float: none;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
 }
 .footer-contact-tel {
-    font-size: 17px;
+    float: none;
+    margin: 0 auto;
+    max-width: 140px;
+    padding: 0px;
 }
-main {
-    background: url('../img/fon/tlbackm.png') no-repeat left top, url('../img/fon/tbbackm.png') no-repeat right top, url('../img/fon/blbackm.png') no-repeat left bottom, url('../img/fon/brbackm.png') no-repeat right bottom, #0f0f0f;
-    
+footer .contact {
+    margin: 0 auto;
+    max-width: 210px;
+    display: block;
+    padding: 20px 0;
 }
+}
+ 
+
+@media  (max-width: 600px) {
+    .slider {
+     display: none;
+    }
+}
+
+@media  (max-width: 518px) {
+    .news article:first-child .new-img {
+   float: none;
+   height: 100%;
+}
+.new-img {
+    float: none;
+}
+.headline-new {
+    padding-top: 10px;
+}
+.indent-new {
+    height: 50px;
+}
+.button-red {
+    margin-top: 10px;
+}
+.title-menut {
+    font-size: 35px;
+    padding-top: 50px;
+}
+.title-menub {
+    font-size: 13px;
+    padding: 30px 0;
+}
+.news {
+    margin-top: 45px;
+}
+.news-title {
+    font-size: 35px;
+}
+
+}
+
+@media  (max-width: 430px){
+    .menu__item {
+        width: 100%;
+    }
+    .case-menu .menu__item:nth-child(1n+1){
+        border-right: 1px #333 solid;
+    }
+    .case-menu .menu__item:nth-child(2) {
+        border-top: 0;
+    }
 }
